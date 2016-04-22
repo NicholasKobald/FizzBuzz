@@ -1,12 +1,15 @@
 /*
 Nicholas Kobald 2016-04-09
+FizzBuzz with no control structures or loops
 */
 public class FizzBuzz{
 	private static final int ZERO = 0;
 	private static final int MAX_INT = 101;
 	private static final int ONE = 1;
-	/*       ~~~~			______________
-	        /. .\  \\/~~~~~| Buzzzzzzzzzz |
+	
+	/*   
+		~~~~			______________
+			 /. .\  \\/~~~~~| Buzzzzzzzzzz |
 			| _  | //      \_____________/
 			 \  / //
 			 _||_//
