@@ -4,6 +4,8 @@
  * Nicholas Kobald 2016-04-09
  * Modified 2017-07-07
  */
+
+ 
 public class FizzBuzz {
 
 	private static final int ZERO = 0;
@@ -20,14 +22,16 @@ public class FizzBuzz {
 		int DivFive = Buzzer%5;
 		int DivThree = Buzzer%3;
 		int Helper = 1337;
+
 		try {
 			Helper = (Helper)/(MAX_INT-Buzzer);
 		} catch(ArithmeticException e) {
 			System.exit(-1);
 		}
-		try{
+
+		try {
 			Helper = Helper/DivFive;
-			try{
+			try {
 				Helper = Helper/DivThree;
 			} catch(ArithmeticException e) {
 				DoEvenMoreFizzBuzz(Buzzer);
@@ -35,10 +39,10 @@ public class FizzBuzz {
 		} catch(ArithmeticException e) {
 			MoreFizzBuzz(Buzzer);
 		}
+
 		System.out.println(Buzzer);
 		Helper = 1337;
 		DoFizzBuzz(++Buzzer);
-
 	}
 
 	public static void DoEvenMoreFizzBuzz(int Buzzer) {
@@ -49,7 +53,7 @@ public class FizzBuzz {
 	public static void MoreFizzBuzz(int Buzzer) {
 		int Helper = 1337;
 		int DivThree = Buzzer%3;
-		
+
 		try {
 			Helper = Helper/DivThree;
 		} catch(ArithmeticException e) {
